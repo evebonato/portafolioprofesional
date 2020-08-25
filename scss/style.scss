@@ -1,7 +1,10 @@
-$color: #ff914d;
+$color: #ffddcc;
+$secundariosecundario: black;
+$ancho :17em;
+$color1 : bisque;
+$medidaminima: 1em;
 
 body {
-    margin: 0;
     color: black;
     background-color: white;
 }
@@ -11,7 +14,6 @@ body {
     font-size: 1.50em;
     background-color: transparent !important;
 
-
     .navbar-center {
         position: absolute;
         left: 50%;
@@ -20,20 +22,18 @@ body {
 
     a {
         color: black;
-        margin-right: 1em;
-        font-size: 1em;
-
+        margin-right: $medidaminima;
+        font-size: $medidaminima;
     }
 
     .nombre_logo {
         font-family: 'Poppins', sans-serif;
-        font-size: 1.4em;
-        opacity: 0.9;
+        font-size: 1.6em;
+        opacity: 0.8;
         font-weight: bold;
         margin-left: 0.4em;
     }
 }
-
 
 .banner {
     background-image: url(../img/imgenfondobanner.jpg);
@@ -70,21 +70,18 @@ body {
         font-size: 1.5em;
         border: none;
         width: 8em;
-        border-radius: 1em;
-        background-color: #ffddcc;
-        margin-bottom: 1em;
+        border-radius: $medidaminima;
+        background-color: $color;
+        margin-bottom: $medidaminima;
         color: #000;
         border: none;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease 0s;
         outline: none;
         margin-top: 2em;
     }
 
     .banner_button:hover {
-        background-color: peachpuff;
-        box-shadow: 0px 15px 20px gray;
-        color: #ffddcc;
+        color: $color;
         transform: translateY(-7px);
         text-decoration: none;
     }
@@ -93,7 +90,6 @@ body {
         text-decoration: none;
     }
 }
-
 
 .titulosPrincipales {
     background-color: white;
@@ -124,79 +120,11 @@ span {
     color: sandybrown;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-
 }
-
-
-.descripcion_servicios {
-    margin-bottom: 2;
-}
-
-
-$ancho :17em;
-$color1 : bisque;
-
-.imagenservicios1 {
-    width: $ancho;
-    border: $color1 solid 3px;
-}
-
-.imagenservicios2 {
-    width: $ancho;
-    border: $color1 solid 3px;
-}
-
-.imagenservicios3 {
-
-    width: $ancho;
-    border: $color1 solid 3px;
-}
-
-.iconoresponsive {
-    margin-top: 1em;
-    color: sandybrown;
-
-}
-
-h1 {
-    @if $color==bisque {
-        color: black;
-    }
-
-    @else if $color==black {
-        color: white;
-    }
-
-    @else {
-        color: black;
-    }
-
-}
-
-// $color1:peru;
-
-// @each $color1 in black,
-// green,
-// gray {
-//     p.#{$color1} {
-//         color: $color1;
-//         font-size: 4em;
-//         text-align: center;
-//     }
-// }
-
-.text-muted {
-    margin-bottom: 2em;
-    margin-top: 2em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: lighter;
-    color: $color;
-}
-
 
 .imagenHabilidad {
-    padding: 1.5em;
-    width: 17em;
+    padding: 1.2em;
+    width: 15em;
     height: 13em;
     -webkit-transition: 1s linear;
     transition: 1s linear;
@@ -204,7 +132,13 @@ h1 {
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     transition-property: background-color, border-radius;
     transition-duration: 1s;
+}
 
+.habilidades1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    opacity: 0.7;
+    font-weight: bold;
 }
 
 .imagenHabilidad:hover {
@@ -213,32 +147,37 @@ h1 {
 }
 
 .habilidades {
-    font-size: 3em;
+    font-size: 2.6em;
     margin: 0%;
     margin-top: 1em;
-    margin-bottom: 1em;
-    color: peru !important;
+    color: black !important;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+    font-weight: lighter;
 }
 
-.cuadradocolor {
-    background-color: plum;
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
 }
 
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
 
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
 
-.trabajos {
-    height: 17em;
-    width: 100%;
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    box-shadow: 20px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    padding: 2em;
-    transition-property: background-color, border-radius;
-    transition-duration: 1s;
-    margin-bottom: 3em;
-    margin-top: 3em;
-
+.img-fluid {
+    margin-top: 5em;
 }
 
 footer {
@@ -254,99 +193,86 @@ footer {
     bottom: 0;
     left: 0;
 
-
-    .footer-links {
-        float: none;
-        text-align: center;
-        align-items: center;
-        color: rgba(0, 0, 0, 0.8);
-    }
-
-    .footer-links a {
-        float: none;
-        text-align: center;
-        color: black;
-        opacity: 0.9;
-        text-decoration: none;
-        font-size: 24px;
-        padding: 0px 10px;
-
-    }
-
-    .footer-links a:hover {
-        opacity: 1;
-    }
-
-    .footer .fa-heart {
-        color: #D23333;
-    }
-
     .iconofooter {
         font-size: 2em;
         color: gray;
         margin-top: 0em;
     }
-
-    .footerdatos {
-        font-size: 1.5em;
-        font-family: 'Open Sans Condensed', sans-serif;
-        margin-bottom: 0%;
-    }
 }
 
-.formularioconsulta {
-    background-image: url(../img/elfial.png);
-    background-size: cover;
-    padding: 0.5em 0;
+.form {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.4em;
 
-    .contactame {
-        color: peru;
-        font-family: 'Open Sans Condensed', sans-serif;
+    .formdatos {
+        font-size: 1.4em;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.7;
     }
 
     h2 {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 4em;
         opacity: 0.8;
-
     }
 
     .botoncontacto {
         font-family: 'Open Sans Condensed', sans-serif;
         letter-spacing: 0.1em;
-        font-size: 1.5em;
+        font-size: 1em;
         border: none;
         width: 8em;
         border-radius: 1em;
-        background-color: #ffddcc;
+        background-color: $color;
         margin-bottom: 1em;
         color: #000;
         border: none;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease 0s;
         outline: none;
         margin-top: 1em;
     }
-
 }
 
 .texto_quiensoy {
+    text-align: center;
+    opacity: 0.8;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 3em;
+}
+
+.descripcion_quiensoy {
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
+    color: black;
+}
+
+.proyecto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+    margin-top: 1em;
+    color: black;
     opacity: 0.8;
 }
 
+hr {
+    color: black;
+    width: 10em;
+    height: 1em;
+    margin-bottom: 2em;
+}
 
-.proyecto {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 3em;
-    font-weight: lighter;
-    margin-bottom: 5em;
-    color: peru;
+.letrav {
+    color: $color;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
 
     body {
-        margin: 0%;
+        margin: 0;
     }
 
     .banner {
@@ -378,4 +304,19 @@ footer {
         align-items: center;
         justify-content: space-around;
     }
+
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+
 }
