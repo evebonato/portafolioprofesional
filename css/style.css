@@ -3,8 +3,8 @@ body {
   background-color: white; }
 
 .navbar {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.50em;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5em;
   background-color: transparent !important; }
   .navbar .navbar-center {
     position: absolute;
@@ -15,25 +15,31 @@ body {
     margin-right: 1em;
     font-size: 1em; }
   .navbar .nombre_logo {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.6em;
-    opacity: 0.8;
+    opacity: 0.9;
     font-weight: bold;
     margin-left: 0.4em; }
+  .navbar .iconoredes:hover {
+    color: #ffddcc;
+    opacity: 0.9;
+    border-radius: 20%; }
 
 .banner {
   background-image: url(../img/imgenfondobanner.jpg);
   background-size: cover;
   background-position: center;
-  padding: 11em 0;
+  padding: 16em 0;
   font-weight: lighter;
-  margin: 1.8em; }
+  margin: 1.4em;
+  height: 100%;
+  width: 100%; }
   .banner .banner_titulo {
     margin: 0;
     letter-spacing: 0.1em;
     font-size: 3.1em;
     margin-top: 0.2em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     color: black;
     opacity: 0.8;
@@ -43,10 +49,10 @@ body {
     margin-bottom: 0.3em;
     letter-spacing: 0.1em;
     font-size: 2em;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     opacity: 0.8; }
   .banner .banner_button {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     letter-spacing: 0.1em;
     font-size: 1.5em;
     border: none;
@@ -60,11 +66,16 @@ body {
     outline: none;
     margin-top: 2em; }
   .banner .banner_button:hover {
-    color: #ffddcc;
+    color: #ffddcc !important;
     transform: translateY(-7px);
     text-decoration: none; }
   .banner a {
     text-decoration: none; }
+
+.container {
+  font-size: 0.9em;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 0.1em; }
 
 .titulosPrincipales {
   background-color: white;
@@ -83,39 +94,30 @@ span img {
 span img:hover {
   filter: opacity(0.5); }
 
-.iconoservicios {
-  font-size: 5em;
-  color: sandybrown;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em; }
-
 .imagenHabilidad {
-  padding: 1.2em;
-  width: 15em;
-  height: 13em;
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-  transition-property: background-color, border-radius;
-  transition-duration: 1s; }
-
-.habilidades1 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: black;
-  opacity: 0.7;
-  font-weight: bold; }
+  width: 6em;
+  height: 6em;
+  color: gray;
+  margin-top: 6em; }
 
 .imagenHabilidad:hover {
-  border-radius: 75px;
-  background-color: gray; }
+  width: 6em;
+  height: 6em;
+  color: #ffddcc;
+  margin-top: 6em; }
+
+.habilidades1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: gray;
+  opacity: 0.7;
+  font-weight: bold; }
 
 .habilidades {
   font-size: 2.6em;
   margin: 0%;
-  margin-top: 1em;
+  margin-top: 1.5em;
   color: black !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   opacity: 0.8;
   font-weight: lighter; }
 
@@ -137,38 +139,62 @@ span img:hover {
   transform: scale(1); }
 
 .img-fluid {
-  margin-top: 5em; }
+  margin-top: 1em; }
 
-footer {
-  float: none;
-  font-size: 0.8em;
-  text-align: center;
-  align-items: center;
-  background: papayawhip;
-  color: black;
-  background-color: white;
+.imagentrabajos {
   width: 100%;
-  height: 5em;
-  bottom: 0;
-  left: 0; }
-  footer .iconofooter {
-    font-size: 2em;
-    color: gray;
-    margin-top: 0em; }
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all 300ms; }
+  .imagentrabajos .imagen2 {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  .imagentrabajos .textoimg {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    opacity: 0;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 0.5em;
+    padding: 1em;
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+  .imagentrabajos .textoimg:hover {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    align-items: center;
+    color: white;
+    opacity: 1;
+    transform: scale(1);
+    font-size: 1.5em; }
+  .imagentrabajos .imagentrabajos:hover {
+    transform: scale(0.15);
+    background-color: gray; }
 
 .form {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.4em; }
   .form .formdatos {
     font-size: 1.4em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     opacity: 0.7; }
   .form h2 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 4em;
     opacity: 0.8; }
   .form .botoncontacto {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     letter-spacing: 0.1em;
     font-size: 1em;
     border: none;
@@ -179,23 +205,33 @@ footer {
     color: #000;
     border: none;
     transition: all 0.3s ease 0s;
-    outline: none;
-    margin-top: 1em; }
+    outline: none; }
+  .form a {
+    color: black;
+    margin-bottom: 2em;
+    margin-left: 0.1em;
+    margin-right: 0.7em;
+    font-size: 1em;
+    opacity: 0.8; }
+
+.form1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em; }
 
 .texto_quiensoy {
   text-align: center;
   opacity: 0.8;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   font-size: 3em; }
 
 .descripcion_quiensoy {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.3em;
   color: black; }
 
 .proyecto {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3em;
   font-weight: lighter;
   margin-top: 1em;
@@ -212,16 +248,34 @@ hr {
   color: #ffddcc;
   font-weight: bold; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body {
-    margin: 0; }
+    margin: 0em; }
+  .navbar a {
+    color: black;
+    font-size: 0.9em; }
+  .navbar {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5em;
+    background-color: transparent !important;
+    padding: 4px; }
+  .texto_quiensoy {
+    text-align: center;
+    opacity: 0.8;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 2.5em; }
   .banner {
     margin: 0%;
     font-size: 0.6em;
     padding: em 0;
-    background-position: left; }
+    background-position: left;
+    height: 100%;
+    object-position: center center;
+    width: 100%;
+    height: 400px; }
     .banner .banner_titulo {
-      font-size: 6em;
+      font-size: 4em;
       background-color: white;
       opacity: 0.7; }
     .banner .banner_subtitulo {
@@ -231,10 +285,8 @@ hr {
       margin-top: 1em;
       font-size: 2em; }
   .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
+    position: absolute;
+    bottom: 0; }
   .gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -243,5 +295,148 @@ hr {
     -moz-column-width: 100%;
     column-width: 100%; }
   .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem; } }
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .imagenHabilidad {
+    width: 6em;
+    height: 6em;
+    color: gray;
+    margin-top: 2em; }
+  .row text-center {
+    padding-top: 10em; }
+  .form {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.7em; }
+    .form .formdatos {
+      font-size: 1em;
+      font-family: "Poppins", sans-serif;
+      opacity: 0.7; }
+    .form h2 {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 2em;
+      opacity: 0.8; }
+    .form .botoncontacto {
+      font-family: "Open Sans Condensed", sans-serif;
+      letter-spacing: 0.1em;
+      font-size: 1em;
+      border: none;
+      width: 8em;
+      border-radius: 1em;
+      background-color: #ffddcc;
+      margin-bottom: 1em;
+      color: #000;
+      border: none;
+      transition: all 0.3s ease 0s;
+      outline: none; }
+    .form a {
+      color: black;
+      margin-bottom: 2em;
+      margin-left: 0.1em;
+      margin-right: 0.7em;
+      font-size: 1em;
+      opacity: 0.8; }
+  .form1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1em; }
+  .tituloportfolio {
+    margin-top: 4em;
+    padding: 0em;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1em; } }
+
+.listahabilidades {
+  margin-bottom: 12em; }
+
+.footer1 {
+  position: relative;
+  height: 100px;
+  bottom: 0;
+  width: 100%; }
+
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .banner {
+    height: 500px; }
+  .tituloportfolio {
+    margin-top: 0em;
+    padding: 0.5em;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1em; } }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  body {
+    padding: 2em; }
+  .banner {
+    margin: 0%;
+    font-size: 0.6em;
+    padding: em 0;
+    background-position: left;
+    height: 100%;
+    object-position: center center;
+    width: 100%;
+    height: 850px; }
+  .tituloportfolio {
+    margin-top: 9em;
+    padding: 4em;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1em; } }
+
+.listahabilidades {
+  padding-top: 0.5em; }
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  body {
+    padding: 2em; }
+  .imagensobremi {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5; }
+  .banner {
+    margin: 0%;
+    font-size: 0.6em;
+    padding: em 0;
+    background-position: left;
+    height: 100%;
+    object-position: center center;
+    width: 100%;
+    height: 1150px; }
+    .banner .banner_titulo {
+      font-size: 6.1em; }
+    .banner .banner_subtitulo {
+      font-size: 3em; }
+    .banner .banner_button {
+      font-size: 3em; }
+  .tituloportfolio {
+    margin-top: 13em;
+    padding: 2em;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 1em; } }
+
+@media screen and (min-device-width: 1700px) and (max-device-width: 1800px) {
+  .banner {
+    margin: 0%;
+    font-size: 0.6em;
+    padding: 17em 0;
+    background-position: left;
+    height: 100%;
+    object-position: center center;
+    width: 100%; }
+  .listahabilidades {
+    padding-top: 3em; } }
+
+@media screen and (min-device-width: 375px) and (max-device-width: 736px) {
+  .banner {
+    margin: 0%;
+    font-size: 0.6em;
+    padding: 17em 0;
+    background-position: left;
+    height: 100%;
+    object-position: center center;
+    width: 100%;
+    height: 669px; }
+  .listahabilidades {
+    padding-top: 3em; } }

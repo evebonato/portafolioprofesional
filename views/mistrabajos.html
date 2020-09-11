@@ -5,14 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Keywords" lang="es"
-        content="diseño web, diseno web, portafolio web, portfolio, website design, responsive design, frontend, diseño de interfaces, diseño UI, diseño UX, maquetacion web, CSS3, FIGMA, JAVASCRIPT" />
+        content="diseño web, diseno web, portafolio web, portfolio, website design, responsive design, frontend, diseño de interfaces, diseño UI, diseño UX, maquetación web, CSS3, FIGMA, JAVASCRIPT" />
     <meta name="description" lang="es"
-        content="Evelyn Bonato - Diseñadora web, conocimientos en Html, css, javascript, sass, figma, diseño de interfaces interactivas.  Responsabilidad y formacion constante." />
+        content="Evelyn Bonato - Diseñadora web, conocimientos en Html, css, javascript, sass, figma, diseño de interfaces interactivas.  Responsabilidad y  formación constante." />
     <title>Evelyn - Diseñadora Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -28,12 +27,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Recursive&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a class="navbar-brand" href="./../index.html">
             <h2 class="nombre_logo"> e<span class="letrav">v</span>elyn<span class="letrav">.</span></h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -42,67 +42,95 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
+                <li id="home" class="nav-item">
                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li id="sobre_mi" class="nav-item">
                     <a class="nav-item nav-link mr-md-3 letra" href="./sobremi.html">Sobre mí</a>
                 </li>
-                <li class="nav-item">
+                <li id="habilidades" class="nav-item">
                     <a class="nav-item nav-link mr-md-3 letra" href="./habilidades.html">Habilidades</a>
                 </li>
-                <li class="nav-item">
+                <li id="mis_trabajos" class="nav-item active">
                     <a class="nav-item nav-link mr-md-3 letra" href="./mistrabajos.html">Mis trabajos</a>
                 </li>
-                <li class="nav-item">
+                <li id="contacto" class="nav-item">
                     <a class="nav-item nav-link mr-md-3 letra" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
-        <a class="d-none d-md-block" href="#"><i class="fab fa-behance"></i></a>
-        <a class="d-none d-md-block" href="#"><i class="fa fa-instagram"></i></a>
-        <a class="d-none d-md-block" href="#"><i class="fa fa-github"></i></a>
-        <a class="d-none d-md-block" href="#"><i class="fa fa-linkedin"></i></a>
+        <a class="d-none d-xl-block" href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
+        <a class="d-none d-xl-block" href="https://www.instagram.com/evebonato/" target="_blank"><i
+                class="fa fa-instagram"></i></a>
+        <a class="d-none d-xl-block" href="https://github.com/evebonato" target="_blank"><i
+                class="fa fa-github"></i></a>
+        <a class="d-none d-xl-block" href="https://www.linkedin.com/in/evelyn-bonato-4246042a/" target="_blank"><i
+                class="fa fa-linkedin"></i></a>
     </nav>
 
+
     <div class="section-title">
-        <h2 class="text-center habilidades">Portfolio</h2>
+        <h2 class="text-center habilidades">Portafolio</h2>
         <hr />
     </div>
 
     <div class="gallery mr-5 ml-5 imagen1" id="gallery">
-        <div class="mb-3 pics animation all 2 imagen1">
-            <img class="img-fluid imagen1" src="../img/proyecto12.jpg" alt="Card image cap" />
+        <div class="mb-3 pics animation all 2 imagen1 imagentrabajos">
+            <img class="img-fluid" src="../img/proyecto12.jpg" />
+            <div class="textoimg">
+                <p> <strong>Explore Travel Experience</strong> <br> Diseño de interfaz, propuestas de wireframes y
+                    prototipos interactivos.</p>
+
+            </div>
         </div>
 
-        <div class="mb-3 pics animation all 1">
-            <img class="img-fluid imagen2" src="../img/proyecto5.jpg" alt="Card image cap" />
+        <div class="mb-3 pics animation all 1 imagentrabajos">
+            <img class="img-fluid" src="../img/proyecto5.jpg" />
+            <div class="textoimg">
+                <p> <strong>COCO</strong> <br> Gráfica para marca de ropa, se trabajó con imágenes
+                    presentadas
+                    por el cliente y se complementó con la elección de paleta de colores y tipografía.</p>
+            </div>
+        </div>
+        <br>
+        <div class="mb-3 pics animation all 1 imagentrabajos">
+
+            <img class="img-fluid" src="../img/proyecto151.jpg" alt="Card image cap" />
+            <div class="textoimg">
+                <p> <strong>ORGANIKO</strong> <br> Diseño de interfaz y desarrollo de landing page.</p>
+            </div>
         </div>
 
-        <div class="mb-3 pics animation all 1">
-            <img class="img-fluid" src="../img/proyecto4.jpg" alt="Card image cap" />
+        <div class="mb-3 pics animation all 2 imagentrabajos">
+            <img class="img-fluid" src="../img/proyecto14.jpg" alt="Card image cap" />
+            <div class="textoimg">
+                <p> <strong>Banner</strong> <br> Diseño de banner para evento social.</p>
+            </div>
         </div>
 
-        <div class="mb-3 pics animation all 2">
-            <img class="img-fluid" src="../img/proyecto8.jpg" alt="Card image cap" />
+        <div class="mb-3 pics animation all 2 imagentrabajos">
+            <img class="img-fluid" src="../img/proyecto13.jpg" alt="Card image cap" />
+            <div class="textoimg">
+                <p> <strong>Fashion Shopping</strong> <br> Diseño de página web, se trabajó en el
+                    diseño de interfaz y experiencia de usuario.</p>
+            </div>
+
         </div>
 
-        <div class="mb-3 pics animation all 2">
-            <img class="img-fluid" src="../img/proyecto6.jpg" alt="Card image cap" />
-        </div>
-
-        <div class="mb-3 pics animation all 1">
+        <div class="mb-3 pics animation all 1 imagentrabajos">
             <img class="img-fluid" src="../img/proyecto7.jpg" alt="Card image cap" />
+            <div class="textoimg">
+                <p> <strong>SUSHI PARLOUR</strong> <br> Diseño de marca, landing page y posicionamiento SEO.</p>
+            </div>
         </div>
     </div>
 
-    <footer class="mt-5">
-        <div class="row">
-            <div class="footer-copyright text-center py-3 col-lg-12 col-md-12">
-                © 2020 Hecho por Evelyn <i class="fas fa-heart"></i>
-            </div>
+    <footer id="sticky-footer" class="py-4 bg-white text-black-100">
+        <div class="container text-center">
+            <large> © 2020 Hecho por Evelyn<i class="fas fa-heart"></i></large>
         </div>
     </footer>
+
 </body>
 
 </html>
